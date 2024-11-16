@@ -1,10 +1,11 @@
 import NavBar from "./components/layouts/navBar/NavBar.jsx";
+import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer.jsx";
 
 function App() {
   return (
     <>
       <NavBar />
-      <h1>App</h1>
+      <ItemListContainer greeting={"Mateo"} />
     </>
   );
 }

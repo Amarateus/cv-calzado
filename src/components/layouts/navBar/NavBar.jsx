@@ -7,12 +7,10 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
-import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
+import DirectionsRunIcon from "@mui/icons-material/DirectionsRun";
+import CartWidget from "../../common/cartWidget/CartWidget";
 
 const pages = ["Hombres", "Mujeres", "Niños"];
 
@@ -31,7 +29,10 @@ function NavBarMUI() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <DirectionsRunIcon fontSize="large" sx={{ display: { xs: "none", md: "flex" }, mr: 1}} />
+          <DirectionsRunIcon
+            fontSize="large"
+            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+          />
           <Typography
             variant="h6"
             noWrap
@@ -84,7 +85,10 @@ function NavBarMUI() {
               ))}
             </Menu>
           </Box>
-          <DirectionsRunIcon fontSize="large" sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          <DirectionsRunIcon
+            fontSize="large"
+            sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
+          />
           <Typography
             variant="h5"
             noWrap
@@ -114,6 +118,7 @@ function NavBarMUI() {
               </Button>
             ))}
           </Box>
+          <CartWidget />
         </Toolbar>
       </Container>
     </AppBar>

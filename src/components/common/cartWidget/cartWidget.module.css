@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+  padding-right: 3px;
+  padding-top: 3px;
+}
+
+.contador {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  font-weight: 1000;
+  font-size: 9px;
+  color: black;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
